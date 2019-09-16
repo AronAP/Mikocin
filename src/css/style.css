@@ -1282,6 +1282,142 @@
   color: #f64d01;
 }
 
+.application {
+  background-color: #f1f8f9;
+  padding: 70px 0 40px;
+}
+
+.application__label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.application__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 48px;
+  margin: 0 auto 75px;
+  text-align: center;
+}
+
+.application__title_orange {
+  color: #fa4f01;
+}
+
+.application__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.application__pic {
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  position: relative;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.application__glass {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+}
+
+.application__pack {
+  position: absolute;
+  bottom: 20px;
+  right: 55px;
+}
+
+.application .application-list {
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  list-style: none;
+  margin: 0 30px;
+  padding: 0;
+}
+
+.application .application-list__li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.application .application-list__pic {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  margin-right: 35px;
+  border-radius: 50%;
+  background-color: white;
+  border: 8px solid #ff6b00;
+  -webkit-box-shadow: 0 0 0 8px #ebe4d9;
+  box-shadow: 0 0 0 8px #ebe4d9;
+}
+
+.application .application-list__text {
+  position: relative;
+  width: 220px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  padding-top: 20px;
+}
+
+.application .application-list__text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 3px;
+  background-color: #a8ca3f;
+}
+
 html,
 body {
   margin: 0;
