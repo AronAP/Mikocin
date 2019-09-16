@@ -2,6 +2,7 @@
 
 @import 'color';
 @import 'main';
+@import 'danger';
 
 
 html, body {
@@ -12,7 +13,7 @@ html, body {
 body {
   font-family: 'Roboto', sans-serif;
   color: $dark-text;
-  background-color: $main-bg;
+  background-color: white;
 }
 
 .container {

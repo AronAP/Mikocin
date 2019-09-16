@@ -7,6 +7,7 @@
   left: 0;
   width: 100%;
   height: 850px;
+  overflow: hidden;
 
   &::after {
     // content: url('../img/circle.svg');
@@ -25,7 +26,7 @@
   &::before {
     content: url('../img/wave.png');
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
   }
 
   &__header {

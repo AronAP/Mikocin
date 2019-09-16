@@ -1,0 +1,156 @@
+.danger {
+  background-color: white;
+  position: relative;
+
+  &::after {
+    content: url('../img/wave.png');
+    position: absolute;
+    transform: rotate(180deg);
+  }
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    img {
+      height: 65px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto 36px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  &__subtitle {
+    margin: 0 auto 26px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+
+  .danger-complication {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+
+    &__column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 30%;
+    }
+
+    &__block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__pic {
+      position: relative;
+      padding: 20px;
+    }
+
+    &__circle {
+      position: absolute;
+      top: -4px;
+      right: 0;
+      transform: rotate(180deg);
+    }
+
+    &__label {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      color: $white-text;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 28px;
+      border-radius: 50%;
+
+      &_1 {
+        background-color: #ec9a6a;
+      }
+
+      &_2 {
+        background-color: #e47643;
+      }
+
+      &_3 {
+        background-color: #ec5b19;
+      }
+    }
+
+    &__title {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 26px;
+    }
+
+    &__descr {
+      position: relative;
+      padding-top: 20px;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 28px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 50px;
+        height: 3px;
+        background-color: #becbd8;
+      }
+    }
+  }
+
+  &__statistic {
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 45px 90px;
+    border: 3px solid #f4d3bb;
+    border-radius: 15px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20%;
+      height: 6px;
+      background: white;
+    }
+
+    &::after {
+      content: url('../img/2-danger/graphic.png');
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &_bold {
+      font-weight: 500;
+    }
+  }
+}
