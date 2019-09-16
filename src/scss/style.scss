@@ -3,11 +3,13 @@
 @import 'color';
 @import 'main';
 @import 'danger';
+@import 'competitors';
 
 
 html, body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
