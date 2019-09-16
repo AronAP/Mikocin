@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900&display=swap&subset=cyrillic');
 
+@import 'color';
+@import 'main';
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: $dark-text;
+  background-color: $main-bg;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
 }
