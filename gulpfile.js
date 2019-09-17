@@ -67,15 +67,13 @@ gulp.task('html', function () {
 
 gulp.task('prebuild', async function () {
 
-  gulp.src([
-      'src/css/style.min.css',
-    ])
+  gulp.src('src/css/**/*.min.css')
     .pipe(gulp.dest('dist/css'));
 
   gulp.src('src/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'));
 
-  gulp.src('src/js/**/*')
+  gulp.src('src/js/**/*.min.js')
     .pipe(gulp.dest('dist/js'));
 
   gulp.src('src/*.html')
