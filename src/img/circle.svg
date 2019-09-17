@@ -1,7 +1,0 @@
-<svg viewBox="500 -50 1015 1015" xmlns="http://www.w3.org/2000/svg" style="transform: translate(-50px, -50px) rotate(100deg);">
-  <circle r="50" cx="507" cy="507"
-    fill="transparent"
-    stroke="red"
-    stroke-width="35"
-    stroke-dasharray="1200 1000"/>
-</svg>

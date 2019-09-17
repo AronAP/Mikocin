@@ -4,23 +4,26 @@
   z-index: 0;
 
   &::before {
-    content: url('../img/wave.png');
+    content: '';
     position: absolute;
-    top: -20px;
-    z-index: -1;
-    width: 100%;
     left: 0;
-    overflow: hidden;
+    top: -20px;
+    background: url(../img/wave.png) left top repeat-x;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
   }
 
   &::after {
-    content: url('../img/wave.png');
+    content: '';
     position: absolute;
-    transform: rotate(180deg);
+    left: 0;
     bottom: -20px;
-    z-index: -1;
+    background: url(../img/wave.png) top left repeat-x;
+    height: 100%;
     width: 100%;
-    overflow: hidden;
+    transform: rotate(180deg);
+    z-index: -1;
   }
 
   &__label {
@@ -68,7 +71,6 @@
       border-radius: 15px;
       padding: 0 20px;
       text-align: center;
-      box-shadow: 0 0 15px rgba(37, 83, 129, 0.08);
 
       &_cream,
       &_folk {

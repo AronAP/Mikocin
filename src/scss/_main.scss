@@ -1,33 +1,35 @@
 .main {
-  background: rgb(195, 242, 255) url('../img/1-main/bg.png') -600px top no-repeat;
+  background: #f3f9ff url('../img/1-main/substrate.png') -500px top no-repeat;
   background-size: 1583px 687px;
   z-index: 0;
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  height: 850px;
+  height: 840px;
   overflow: hidden;
 
-  &::after {
-    // content: url('../img/circle.svg');
+  &::before {
     content: '';
+    background: #e2e2e2 url('../img/1-main/bg.png') right top no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    left: 290px;
-    top: 58%;
-    border-radius: 100%;
-    width: 570px;
-    height: 570px;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 0px 2000px rgba(255, 255, 255, 0.8);
+    top: 0;
+    right: 0;
     z-index: -1;
+    opacity: .92;
   }
 
-  &::before {
-    content: url('../img/wave.png');
+  &::after {
+    content: '';
     position: absolute;
+    left: 0;
     bottom: 0;
-    background: linear-gradient(to top, #fff 20%, transparent 20%);
+    background: url(../img/wave.png) left bottom repeat-x;
+    height: 100%;
+    width: 100%;
   }
 
   &__header {
@@ -93,6 +95,33 @@
     flex-basis: 40%;
   }
 
+  .main-hole {
+    position: absolute;
+    top: 50px;
+    left: -165px;
+
+    &__svg {
+      position: absolute;
+      top: -56px;
+      left: 34px;
+      width: 571px;
+      height: 571px;
+      transform: rotate(90deg);
+
+      svg {
+        width: 700px;
+        height: 700px;
+      }
+    }
+
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+  }
+
   &__legs {
     position: absolute;
     top: -105px;
@@ -103,7 +132,7 @@
   .main-products {
     position: absolute;
     bottom: -160px;
-    left: -120px;
+    left: -190px;
     z-index: 1;
 
     &__tablets {
@@ -126,12 +155,12 @@
         position: absolute;
         top: -15px;
         right: 0;
-        padding: 7px;
+        padding: 8px;
         color: $white-text;
         background-color: $orange-color;
         border-radius: 8px;
         font-size: 34px;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 24px;
         z-index: 3;
       }
@@ -146,12 +175,12 @@
         position: absolute;
         top: -15px;
         right: 30px;
-        padding: 7px;
+        padding: 8px;
         color: $white-text;
         background-color: $green-color;
         border-radius: 8px;
         font-size: 34px;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 24px;
         z-index: 3;
       }
@@ -216,10 +245,25 @@
     padding: 0;
 
     &__li {
+      position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 40px;
+
+      &_1::before {
+        content: url('../img/1-main/way-1.png');
+        position: absolute;
+        top: -34px;
+        left: 24px;
+      }
+
+      &_2::before {
+        content: url('../img/1-main/way-2.png');
+        position: absolute;
+        top: -34px;
+        left: 24px;
+      }
     }
 
     &__label {
@@ -289,6 +333,8 @@
     border: 7px solid $green-color;
     border-radius: 15px;
     align-self: flex-start;
+    box-shadow: 0 20px 40px rgba(29, 91, 152, 0.1);
+    z-index: 1;
 
     &::after {
       content: url('../img/1-main/arrow.png');
@@ -309,7 +355,7 @@
 
       &-wrap {
         padding: 8px;
-        background: #f9f9f9;
+        background: #f2f7fe;
         border-radius: 8px;
         display: flex;
         flex-direction: row;
@@ -332,13 +378,13 @@
       text-align: center;
       margin-top: 50px;
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 500;
       line-height: 22px;
       margin-bottom: 15px;
 
       &__span {
         display: block;
-        font-weight: 500;
+        font-weight: 600;
         color: $orange-color;
       }
     }
@@ -396,7 +442,7 @@
         &_highlight {
           background-color: $yellow-color;
           border-radius: 5px;
-          font-weight: 400;
+          font-weight: 600;
         }
       }
     }

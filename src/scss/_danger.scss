@@ -4,12 +4,15 @@
   z-index: 0;
 
   &::after {
-    content: url('../img/wave.png');
+    content: '';
     position: absolute;
+    left: 0;
+    background: url(../img/wave.png) top left repeat-x;
+    height: 100%;
+    width: 100%;
     transform: rotate(180deg);
     bottom: -160px;
     z-index: -1;
-    width: 100%;
   }
 
   &__label {
@@ -154,7 +157,7 @@
     }
 
     &_bold {
-      font-weight: 500;
+      font-weight: 600;
     }
   }
 }
