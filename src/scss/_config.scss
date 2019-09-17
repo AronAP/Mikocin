@@ -1,0 +1,17 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $dark-text;
+  background-color: white;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}

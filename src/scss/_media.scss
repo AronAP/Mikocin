@@ -1,0 +1,528 @@
+@media screen and (max-width: 1200px) {
+
+  .hide-large {
+    display: none;
+  }
+
+  .container {
+    width: 960px;
+  }
+
+  .main {
+    background-position: left top;
+    background-size: cover;
+    height: 100%;
+
+    &__content {
+      flex-wrap: wrap;
+    }
+
+    .main-logo {
+      flex-basis: 30%;
+    }
+
+    &__achievements {
+      flex-basis: 70%;
+    }
+
+    &__pic {
+      flex-basis: 58%;
+    }
+
+    .main-hole {
+      left: -100px;
+    }
+
+    &__legs {
+      left: -200px;
+    }
+
+    .main-products {
+      left: -64px;
+    }
+
+    .main-descr {
+      flex-basis: 42%;
+    }
+
+    .main-form {
+      flex-basis: 30%;
+      margin: 230px auto 60px;
+
+      .form-hurry {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .danger {
+
+    &::after {
+      bottom: -110px;
+    }
+
+    &__subtitle {
+      margin: 0 auto 40px;
+    }
+
+    .danger-complication {
+
+      &__column {
+        text-align: center;
+      }
+
+      &__block {
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      &__descr {
+
+        &::before {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+
+  .competitors {
+    padding: 140px 0 90px;
+
+    .competitors-items {
+
+      &__column {
+        padding: 0 15px;
+      }
+    }
+  }
+
+  .efficiency {
+
+    .efficiency-items {
+
+      &__column {
+        padding: 0 15px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .hide-medium {
+    display: none;
+  }
+
+  .container {
+    width: 720px;
+  }
+
+  .main {
+    height: 880px;
+
+    &::after {
+      bottom: -130px;
+      z-index: -1;
+    }
+
+    &__header {
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .main-logo {
+      margin-bottom: 30px;
+      flex-basis: 100%;
+
+      &__img {
+
+        img {
+          height: auto;
+        }
+      }
+
+      &__text {
+        font-size: 50px;
+      }
+    }
+
+    &__achievements {
+      flex-basis: 100%;
+    }
+
+    .main-steps {
+      &__li {
+
+        &_1::before {
+          top: -40px;
+        }
+      }
+
+      &__text {
+        width: 260px;
+      }
+    }
+
+    .main-form {
+      flex-basis: 40%;
+      margin: 0;
+
+      &::after {
+        top: 28%;
+      }
+    }
+  }
+
+  .danger {
+
+    .danger-complication {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+
+      &__column {
+        width: 60%;
+        margin-bottom: 60px;
+      }
+    }
+
+    &__statistic {
+      padding: 45px;
+    }
+  }
+
+  .competitors {
+
+    .competitors-items {
+      flex-direction: column;
+      width: 70%;
+      margin: 0 auto;
+
+      &__column {
+        margin-bottom: 90px;
+      }
+    }
+
+    &__conclusion {
+      padding: 30px;
+    }
+  }
+
+  .efficiency {
+
+    .efficiency-items {
+
+      flex-direction: column;
+      width: 70%;
+      margin: 0 auto;
+
+      &__column {
+        margin-bottom: 110px;
+      }
+    }
+
+    &__conclusion-wrap {
+      width: 70%;
+
+    }
+
+    &__conclusion {
+      width: auto;
+    }
+
+  }
+
+  .application {
+
+    .application-list__text {
+      width: 165px;
+    }
+
+    &__pic {
+      transform: scale(0.9);
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 540px;
+  }
+
+  .main {
+    height: 1650px;
+
+    &__achievements {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-achieve {
+      margin-bottom: 20px;
+    }
+
+    &__content {
+      text-align: left;
+      justify-content: center;
+    }
+
+    .main-descr {
+      margin-bottom: 50px;
+
+      .descr-title {
+        text-align: center;
+      }
+    }
+
+    .main-steps {
+      &__li {
+        justify-content: center;
+
+        &_1::before {
+          top: -34px;
+        }
+      }
+
+      &__text {
+        width: 300px;
+        padding: 0;
+      }
+    }
+
+    .main-form {
+      flex-basis: 53%;
+      margin: 0 auto;
+    }
+  }
+
+  .danger {
+
+    .danger-complication {
+
+      &__column {
+        width: auto;
+      }
+    }
+  }
+
+  .competitors {
+
+    .competitors-items {
+      width: auto;
+    }
+  }
+
+  .efficiency {
+
+    .efficiency-items {
+      width: auto;
+    }
+
+    &__conclusion-wrap {
+      width: auto;
+    }
+  }
+
+  .application {
+    padding: 70px 0;
+
+    &__content {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__pic {
+      order: 1;
+      transform: scale(1);
+      flex-basis: auto;
+      width: 80%;
+    }
+
+    &__glass {
+      position: initial;
+    }
+
+    &__pack {
+      bottom: -43px;
+      left: 64px;
+    }
+
+    .application-list {
+      flex-basis: auto;
+      margin-bottom: 40px;
+
+      &__text {
+        width: 230px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .container {
+    width: 320px;
+  }
+
+  .main {
+    height: 1830px;
+
+    .main-logo {
+      flex-direction: column;
+
+      &__img {
+        margin: 0;
+      }
+
+      &__text {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .main-descr {
+
+      .descr-title {
+        font-size: 37px;
+      }
+
+      &__secondary {
+        font-size: 27px;
+      }
+    }
+
+    .main-steps {
+
+      &__li {
+
+        &_1::before,
+        &_2::before {
+          display: none
+        }
+      }
+
+      &__label {
+        font-size: 18px;
+      }
+
+      &__text {
+        width: 200px;
+        font-size: 18px;
+      }
+    }
+
+    .main-form {
+      flex-basis: 86%;
+
+      &::after {
+        display: none
+      }
+    }
+  }
+
+  .danger {
+
+    &__title {
+      margin: 0 auto 20px;
+      font-size: 37px;
+      line-height: 42px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    .danger-complication {
+      padding: 0 10px;
+    }
+
+    &__statistic {
+      margin: 0 10px;
+      padding: 30px 10px;
+    }
+  }
+
+  .competitors {
+
+    &__title {
+      font-size: 35px;
+      line-height: 42px;
+    }
+
+    .competitors-items {
+      margin: 0 10px;
+    }
+
+    &__conclusion {
+      margin: 0 10px;
+      padding: 30px 10px;
+    }
+  }
+
+  .efficiency {
+
+    &__title {
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    .efficiency-items {
+      margin: 0 10px;
+    }
+
+    &__conclusion-wrap {
+      margin: 0 10px;
+    }
+
+    &__conclusion {
+      padding: 30px 10px;
+    }
+  }
+
+  .application {
+    padding-bottom: 0;
+
+    &__title {
+      font-size: 37px;
+      line-height: 42px;
+      margin-bottom: 55px;
+    }
+
+    .application-list {
+      margin-bottom: 0;
+
+      &__li {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 80px;
+      }
+
+      &__pic {
+        margin: 0 0 30px;
+      }
+
+      &__text {
+
+        &::before {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+
+}
