@@ -40,6 +40,11 @@
       padding: 0 20px;
       text-align: center;
       box-shadow: 0 0 15px rgba(37, 83, 129, 0.08);
+      transition: .2s;
+
+      &:hover {
+        box-shadow: 0 0 15px rgba(37, 83, 129, 0.3);
+      }
     }
 
     &__img {
@@ -133,6 +138,11 @@
     padding: 30px 90px;
     border: 3px solid #f4d3bb;
     border-radius: 15px;
+    transition: .2s;
+
+    &:hover {
+      border: 3px solid #ffbd8e;
+    }
 
     &::before {
       content: '!';
@@ -144,6 +154,11 @@
       background: #ebf6f8;
       color: #f4d3bb;
       font-size: 85px;
+      transition: .2s;
+    }
+
+    &:hover::before {
+      color: #ffbd8e;
     }
 
     &::after {

@@ -9,6 +9,12 @@
   <title>Микоцин</title>
 
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </head>
 
 <body>
@@ -65,7 +71,7 @@
         <div class="main__pic hide-medium">
           <div class="main__hole main-hole">
             <div class="main-hole__svg">
-              <svg class="intro__circle-img" viewBox="0 0 160 170" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 160 170" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="78" cy="78" r="78" fill="transparent" stroke="white" stroke-width="6"
                   stroke-dasharray="293, 440">
               </svg>
@@ -82,25 +88,25 @@
           </div>
           <!-- /.main__legs -->
           <div class="main__products main-products">
-            <div class="main-products__plant plant">
+            <div class="main-products__plant plant wow fadeIn">
               <img class="plant__img" src="img/1-main/plant.png" alt="Растение">
             </div>
             <!-- /.main-products__plant -->
-            <div class="main-products__large-pack large-pack">
+            <div class="main-products__large-pack large-pack wow fadeInDown">
               <img class="large-pack__img" src="img/1-main/pack-large.png" alt="Большая упаковка">
               <span class="large-pack__price">299 &#8381;</span>
             </div>
             <!-- /.main-products__large-pack -->
-            <div class="main-products__tablets tablets">
+            <div class="main-products__tablets tablets wow fadeIn" data-wow-delay="0.5s">
               <img class="tablets__img" src="img/1-main/tablets.png" alt="Таблетки">
             </div>
             <!-- /.main-products__tablets -->
-            <div class="main-products__medium-pack medium-pack">
+            <div class="main-products__medium-pack medium-pack wow fadeInLeft" data-wow-delay="1s">
               <img class="medium-pack__img" src="img/1-main/pack-medium.png" alt="Средняя упаковка">
               <span class="medium-pack__price">299 &#8381;</span>
             </div>
             <!-- /.main-products__medium-pack -->
-            <div class="main-products__small-pack">
+            <div class="main-products__small-pack wow fadeIn" data-wow-delay="2s">
               <img class="small-pack__img" src="img/1-main/pack-small.png" alt="Маленькая упаковка">
             </div>
             <!-- /.main-products__small-pack -->
@@ -168,7 +174,7 @@
         </div>
         <!-- /.main__descr main-descr -->
 
-        <div class="main__form main-form">
+        <div class="main__form main-form wow zoomIn" data-wow-delay="2s">
 
           <div class="main-form__badge badge hide-large">
             <div class="badge-wrap">
@@ -218,12 +224,12 @@
 
           <form action="#" class="form">
             <div class="form__input_user">
-              <input type="text" class="form__input" placeholder="Имя">
+              <input type="text" class="form__input" placeholder="Имя" required>
             </div>
             <!-- /.form__input_user -->
 
             <div class="form__input_tel">
-              <input type="text" class="form__input" placeholder="Телефон">
+              <input type="text" class="form__input" placeholder="Телефон" required>
             </div>
             <!-- /.form__input_tel -->
 
@@ -422,7 +428,7 @@
       </div>
       <!-- /.competitors__title -->
       <div class="competitors__items competitors-items">
-        <div class="competitors-items__column">
+        <div class="competitors-items__column wow fadeIn">
           <div class="competitors-items__img">
             <img src="img/3-competitors/marvel.png" alt="Чудо">
           </div>
@@ -451,7 +457,7 @@
           <!-- /.competitors-items__text -->
         </div>
         <!-- /.competitors-items__column -->
-        <div class="competitors-items__column">
+        <div class="competitors-items__column wow fadeIn" data-wow-delay="0.5s">
           <div class="competitors-items__img">
             <img src="img/3-competitors/tube.png" alt="Тюбик">
           </div>
@@ -481,7 +487,7 @@
           <!-- /.competitors-items__text -->
         </div>
         <!-- /.competitors-items__column -->
-        <div class="competitors-items__column">
+        <div class="competitors-items__column wow fadeIn" data-wow-delay="1s">
           <div class="competitors-items__img">
             <img src="img/3-competitors/jar.png" alt="Баночка">
           </div>
@@ -542,7 +548,7 @@
       </div>
       <!-- /.efficiency__title -->
       <div class="efficiency__items efficiency-items">
-        <div class="efficiency-items__column efficiency-items__column_cream">
+        <div class="efficiency-items__column efficiency-items__column_cream wow fadeIn">
           <div class="efficiency-items__img-wrap efficiency-items__img-wrap_cream">
             <div class="efficiency-items__img">
               <img src="img/4-efficiency/cream.png" alt="Кремы и мази">
@@ -566,7 +572,7 @@
         </div>
         <!-- /.efficiency-items__column -->
 
-        <div class="efficiency-items__column efficiency-items__column_folk">
+        <div class="efficiency-items__column efficiency-items__column_folk wow fadeIn" data-wow-delay="0.5s">
           <div class="efficiency-items__img-wrap efficiency-items__img-wrap_folk">
             <div class="efficiency-items__img">
               <img src="img/4-efficiency/folk.png" alt="Народные методы">
@@ -588,7 +594,7 @@
         </div>
         <!-- /.efficiency-items__column -->
 
-        <div class="efficiency-items__column efficiency-items__column_tablets">
+        <div class="efficiency-items__column efficiency-items__column_tablets wow fadeIn" data-wow-delay="1s">
           <div class="efficiency-items__img-wrap efficiency-items__img-wrap_tablets">
             <div class="efficiency-items__img">
               <img src="img/4-efficiency/tablets.png" alt="Таблетки">
@@ -614,7 +620,7 @@
 
       </div>
       <!-- /.efficiency__items efficiency-items -->
-      <div class="efficiency__conclusion-wrap">
+      <div class="efficiency__conclusion-wrap wow fadeIn" data-wow-delay="1.5s">
         <div class="efficiency__conclusion">
           Зачем лечить сложнее, дольше и дороже, если есть <span class="efficiency__conclusion_orange">Микоцин?</span>
         </div>
@@ -642,11 +648,11 @@
       <div class="application__content">
 
         <div class="application__pic hide-mobile">
-          <div class="application__glass">
+          <div class="application__glass wow fadeIn">
             <img src="img/5-application/glass.png" alt="Стакан">
           </div>
           <!-- /.application__glass -->
-          <div class="application__pack">
+          <div class="application__pack wow fadeInLeft">
             <img src="img/5-application/tablets.png" alt="Микоцин">
           </div>
           <!-- /.application__pack -->
